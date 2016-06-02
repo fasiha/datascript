@@ -2,10 +2,10 @@
   (:refer-clojure :exclude [filter])
   (:require
     [datascript.pull-api :as dp]
-    [datascript.db :as db #?@(:cljs [:refer [FilteredDB]])]
     [datascript.query :as dq]
     [datascript.impl.entity :as de]
     [datascript.btset :as btset])
+    [datascript.db :as db #?@(:cljs [:refer [FilteredDB]])]
   #?(:clj
     (:import
       [datascript.db FilteredDB]
